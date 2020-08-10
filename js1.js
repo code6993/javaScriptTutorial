@@ -91,3 +91,6 @@ let hola = `Hello ${name+ " Sinha \u2718" + 9*2}`;
 
 console.log(greeting);
 console.log(hola);
+
+//ES6 has one built-in tag function: String.raw(). It returns the text within backticks without any processing of backslash escapes
+console.log("Raw value of "+ String.raw`This is my december \n \t ${ hola+" "+ name}`);
