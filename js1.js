@@ -1,7 +1,13 @@
+//How to run JavaScript :
+//Install Node Js 
+// Run in cmd by node <path to js>
+
 let x=10
 let y=10;
 console.log(x*y);
+console.log(isFinite(x*y));
 
+//isFinite is built in function that tells if number is finite or not
 
 //in js, primitive types are immutable
 let test= "abcd";
@@ -19,6 +25,8 @@ let z2 = 0o2332; //octal
 console.log("Value of z = "+ z); // prints 195939070
 console.log("Value of K2= "+ k2); // prints 85
 console.log("Value of z2 = "+ z2); // 1242
+console.log("Sine value :"+ " "+Math.sin(12));
+//Math is an inbuilt library
 
 
 //floating points literal 
@@ -58,7 +66,7 @@ s.normalize("NFD")      // NFD normalization. Also "NFKC", "NFKD"
 s.charAt(0)             // => "H": the first character
 s.charAt(s.length-1)    // => "d": the last character
 s.charCodeAt(0)         // => 72: 16-bit number at the specified position
-s.codePointAt(0)        // => 72: ES6, works for codepoints > 16 bits
+s.codePointAt(0)        ;// => 72: ES6, works for codepoints > 16 bits
 
 // String padding functions in ES2017
 "x".padStart(3)         // => "  x": add spaces on the left to a length of 3
@@ -93,4 +101,5 @@ console.log(greeting);
 console.log(hola);
 
 //ES6 has one built-in tag function: String.raw(). It returns the text within backticks without any processing of backslash escapes
-console.log("Raw value of "+ String.raw`This is my december \n \t ${ hola+" "+ name}`);
+console.log("Raw value of "+ String.raw`This is my december \n \t ${ hola+" "+ name}`); 
+// all the backslash will be ignored
