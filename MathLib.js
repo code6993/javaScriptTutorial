@@ -28,3 +28,13 @@ console.log(Math.trunc(3.9))  // => 3: convert to an integer by truncating fract
 console.log(Math.fround(90.89898))   // Round to nearest 32-bit float number
 console.log(Math.sinh(90))     // Hyperbolic sine. Also console.log(Math.cosh()), console.log(Math.tanh())
 console.log(Math.asinh(9))    // Hyperbolic arcsine. Also console.log(Math.acosh()), console.log(Math.atanh())
+
+Number.parseInt()       // Same as the global parseInt() function
+Number.parseFloat()     // Same as the global parseFloat() function
+Number.isNaN(x)         // Is x the NaN value?
+Number.isFinite(x)      // Is x a number and finite?
+Number.isInteger(x)     // Is x an integer?
+Number.isSafeInteger(x) // Is x an integer -(2**53) < x < 2**53?
+Number.MIN_SAFE_INTEGER // => -(2**53 - 1)
+Number.MAX_SAFE_INTEGER // => 2**53 - 1
+Number.EPSILON   // => 2**-52: smallest difference between numbers
